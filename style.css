@@ -1,0 +1,128 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+
+.device{
+    height: 580px;
+    width: calc(580px * 482 / 972);
+    position: relative;
+}
+
+.border{
+    position: absolute;
+    width: 100%;
+}
+
+.border img{
+    display: block;
+    max-height: 580px;
+    width: auto;
+    height: auto;
+}
+
+.screen{
+    top: 10%;
+    left: 5px;
+    cursor: pointer;
+    width: 96%;
+    padding: 10px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px repeat(5, 55px);
+    grid-gap: 10px;
+}
+
+.output{
+    grid-column: 1/-1;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output *
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.pre-oper{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cur-oper{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+
+.gray-btn{
+    background-color: rgb(165, 165, 165);
+    color: black;
+}
+.gray-btn:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.black-btn{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-weight: 400;
+}
+
+.black-btn:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.orange-btn{
+    background-color: rgb(254, 149, 4);
+    color: white;
+}
+
+.orange-btn:hover{
+    background-color: white;
+    color: rgb(254, 149, 4);
+}
+
+.span-two
+{
+    grid-column: span 2;
+    border-radius: 50px;
+}
