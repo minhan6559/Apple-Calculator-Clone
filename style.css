@@ -30,7 +30,7 @@ main{
     z-index: -1;
 }
 
-.border img{
+#ip-border-svg{
     display: block;
     max-height: 580px;
     width: auto;
@@ -61,9 +61,26 @@ main{
     align-items: center;
 }
 
-.indicator svg{
+#indicator-svg{
     height: 0.6rem;
     width: auto;
+}
+
+.nav-bar
+{
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#nav-bar-svg{
+    transition: all 0.3s ease-out;
+}
+
+#nav-bar-svg:hover{
+    transform: scale(1.05)translateZ(0)translateY(-2px);
 }
 
 .screen{
