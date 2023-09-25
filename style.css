@@ -27,6 +27,7 @@ main{
 .border{
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 
 .border img{
@@ -34,6 +35,35 @@ main{
     max-height: 580px;
     width: auto;
     height: auto;
+}
+
+.status-bar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 79%;
+    top: 3%;
+    left: 12%;
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.indicator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator svg{
+    height: 0.6rem;
+    width: auto;
 }
 
 .screen{

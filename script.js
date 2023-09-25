@@ -129,6 +129,14 @@ const delBtn = document.querySelector("[data-del]");
 const convertMinusPlusBtn = document.querySelector("[data-convert-minus-plus]");
 const curOperEle = document.querySelector("[data-cur-oper]");
 const preOperEle = document.querySelector("[data-pre-oper]");
+const clockEle = document.querySelector("[data-clock]");
+
+const updateTime = () => {
+    const time = new Date();
+    clockEle.innerText = time.toLocaleTimeString('it-IT').slice(0, -3);
+};
+
+setInterval(updateTime, 1000);
 
 const calc = new Calculator(curOperEle, preOperEle);
 
