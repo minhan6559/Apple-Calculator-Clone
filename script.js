@@ -106,12 +106,12 @@ class Calculator{
         this.operator = "";
     }
 
-    getStringRoundedNumber(numberString)
+    getRoundedNumber(numberString)
     {
         if(numberString === "")
             return "";
 
-        return parseFloat(numberString).toString();
+        return parseFloat(numberString);
     }
 
     updateDisplay()
