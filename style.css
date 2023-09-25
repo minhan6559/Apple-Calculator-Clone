@@ -19,8 +19,8 @@ main{
 }
 
 .device{
-    height: 550px;
-    width: calc(550px * 482 / 972);
+    height: 580px;
+    width: calc(580px * 482 / 972);
     position: relative;
 }
 
@@ -31,13 +31,13 @@ main{
 
 .border img{
     display: block;
-    max-height: 550px;
+    max-height: 580px;
     width: auto;
     height: auto;
 }
 
 .screen{
-    top: 8%;
+    top: 10%;
     left: 5px;
     cursor: pointer;
     width: 96%;
