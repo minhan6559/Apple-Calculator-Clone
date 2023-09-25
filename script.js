@@ -116,7 +116,7 @@ class Calculator{
 
     updateDisplay()
     {
-        this.preOperEle.innerText = this.getRoundedNumber(this.preOperText) + this.operator;
+        this.preOperEle.innerText = this.getRoundedNumber(this.preOperText).toString() + this.operator;
         this.curOperEle.innerText = this.curOperText;
     }
 }
