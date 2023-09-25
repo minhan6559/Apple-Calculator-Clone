@@ -16,12 +16,11 @@ main{
     min-height: 100vh;
     justify-content: space-evenly;
     align-items: center;
-    border: 5px solid black;
 }
 
 .device{
-    height: 580px;
-    width: calc(580px * 482 / 972);
+    height: 550px;
+    width: calc(550px * 482 / 972);
     position: relative;
 }
 
@@ -32,13 +31,13 @@ main{
 
 .border img{
     display: block;
-    max-height: 580px;
+    max-height: 550px;
     width: auto;
     height: auto;
 }
 
 .screen{
-    top: 10%;
+    top: 8%;
     left: 5px;
     cursor: pointer;
     width: 96%;
@@ -152,8 +151,7 @@ a{
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 5px;
-    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
 .contact-links a{
